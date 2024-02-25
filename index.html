@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>TSC Projek</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"rel="stylesheet"/>
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer.css" />
+
+  </head>
+  
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <img src="img/logonav.png" alt="logo" />
+      <a href="index.html" id="home"> Home </a>
+      <a href="about.html"> About </a>
+      <a href="menu.html"> Menu </a>
+      <a href="career.html"> Careers </a>
+    </nav>
+    <!-- End of Navbar -->
+    <section class="nav-logo-mid">
+      <video loop muted autoplay plays-inline class="background-video">
+        <source src="vid/background.mp4" type="video/mp4" />
+      </video>
+      <img src="img/LOGO.png" />
+      <a> ManganKuy </a>
+      <b> No. 1 Indonesian food top restaurant </b>
+    </section>
+
+    <section class="visi">
+      <div class="test">
+        <p>
+          To be known as the go-to spot for authentic Indonesian flavors, loved
+          locally and recognized globally.
+        </p>
+        <a href="about.html" class="btn"> Our Story </a>
+      </div>
+    </section>
+<!-- SLIDER -->
+    <section class="caross">
+      <div id="slider-container">
+        <div id="slider">
+          <div class="slide"><img src="img/slider-1f.jpg" alt="Image 1"></div>
+          <div class="slide"><img src="img/slider-2f.jpg" alt="Image 2"></div>
+          <div class="slide"><img src="img/slider-3f.jpg" alt="Image 3"></div>>
+          <div class="slide"><img src="img/slider-4f.jpg" alt="Image 4"></div>
+        </div>
+      
+        <div class="btn-container">
+          <button class="control-btn" onclick="prevSlide()">
+            <i class="ri-arrow-left-s-line"></i>
+          </button>
+          <button class="control-btn" onclick="nextSlide()">
+            <i class="ri-arrow-right-s-line"></i>
+          </button>
+          </div>
+        </div>
+      </section>
+<!-- OUR TEAM SECTION -->
+    <section class="team">
+      <div class="center">
+        <a>
+          Founded by individuals with extensive experience in the F&B sector and
+          guided by the mastery of a seasoned chef.</a
+        >
+
+        <div class="team-content">
+          <div class="circle">
+            <img src="img/muh.png" />
+            <h3>Naufal</h3>
+            <h5>CEO</h5>
+          </div>
+
+          <div class="circle">
+            <img src="img/qirip.png" />
+            <h3>Qirip</h3>
+            <h5>Co-Founder</h5>
+          </div>
+
+          <div class="circle">
+            <img src="img/adhi.png" />
+            <h3>Adhi</h3>
+            <h5>Director</h5>
+          </div>
+        </div>
+        <a href="about.html#tim" class="btn">Meet Our Leadership Team ></a>
+      </div>
+    </section>
+
+    <!-- CONTACT US   -->
+    <section class="contact-section">
+      <section class="wrapper-message">
+        <p class="contact-message">Want to get in touch?<br> Send us a message!</p>
+        <button class="contact-button" id="open-btn">Contact Us</button>
+      </section>
+      <div class="container" id="popup">
+        <h2>Contact Us</h2>
+        <form action="" method="post" name="study-club-form">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="nama" required />
+  
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required />
+  
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="pesan" rows="4" required></textarea>
+  
+          <button type="submit" class="btn-submit" id="close-btn">Submit</button>
+        </form>
+      </div>
+      <div class="overlay" id="overlay"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="isi-footer">
+        <img src="img/LOGO.png" />
+        <div class="lokasi">
+          <b> MANGANKUY HEAD OFFICE</b>
+          <a> Jl. Nusantara Raya No. 91,</a>
+          <a> Tugu, Cimanggis,</a>
+          <a> Kota Depok</a>
+          <br />
+          <b> FOLLOW US! </b>
+          <ul class="social-logo">
+            <a href="https://www.linkedin.com" target="_blank"
+              ><i class="ri-linkedin-fill"></i
+            ></a>
+            <a href="https://www.instagram.com/naufalmuh.11/" target="_blank"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="https://www.facebook.com/DgadgetIn" target="_blank"
+              ><i class="ri-facebook-fill"></i
+            ></a>
+            <a
+              href="https://youtube.com/@naufalmuhammad2254?feature=shared"
+              target="_blank"
+              ><i class="ri-youtube-fill"></i
+            ></a>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="jscript/main.js"></script>
+  
+</html>

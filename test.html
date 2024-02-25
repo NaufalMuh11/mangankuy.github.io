@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #slider-container {
+      width: 400px;
+      overflow: hidden;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      position: relative;
+    }
+
+    #slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .btn-container {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+
+    .control-btn {
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div id="slider-container">
+  <div id="slider">
+    <div class="slide"><img src="img/slider-1f.jpg" alt="Image 1"></div>
+    <div class="slide"><img src="img/slider-2f.jpg" alt="Image 2"></div>
+    <div class="slide"><img src="img/slider-3f.jpg" alt="Image 3"></div>
+    <div class="slide"><img src="img/slider-4f.jpg" alt="Image 4"></div>
+  </div>
+
+  <div class="btn-container">
+    <button class="control-btn" onclick="prevSlide()">Previous</button>
+    <button class="control-btn" onclick="nextSlide()">Next</button>
+  </div>
+</div>
+
+<script>
+  const slider = document.getElementById('slider');
+  let currentIndex = 0;
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % 4;
+    updateSlider();
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + 4) % 4;
+    updateSlider();
+  }
+
+  function updateSlider() {
+    const translateValue = -currentIndex * 100 + '%';
+    slider.style.transform = 'translateX(' + translateValue + ')';
+  }
+  setInterval(nextSlide, 3000);
+</script>
+
+</body>
+</html>

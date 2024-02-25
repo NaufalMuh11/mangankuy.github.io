@@ -1,0 +1,141 @@
+:root {
+  --primary: #e35007;
+  --secondary: #F2F0EB;
+  --night: #0E0F10ff;
+--night-2: #151513ff;
+--bistre: #2F1C15ff;
+--lion: #C59E6Eff;
+--chamoisee: #A97F59ff;
+--black-bean: #2F160Fff;
+--caf-noir: #4E3626ff;
+--engineering-orange: #b9371b;
+--blood-red: #5C160Fff;
+--golden-brown: #A26C30ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--secondary);
+  /* height: 10000px; */
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 7%;
+  background-color: rgb(245, 245, 245);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+
+img {
+  width: auto;
+  height: 30px;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: rgb(255, 200, 82);
+  transition-duration: 350ms;
+}
+
+.navbar #career{
+  color:#949494;
+}
+
+.container-2 {
+  background-color: #21292c;
+  height: 43rem;
+  flex-wrap: wrap;
+}
+
+.cont-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 8rem;
+}
+
+.foto-comp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#slide1 {
+  background-image: url(img/nasi.webp);
+  width: 18rem;
+  height: 486px;
+  margin-left: 5rem;
+  background-size: cover;
+}
+
+#slide2 {
+  background-image: url(img/chef.jpg);
+  width: 18rem;
+  height: 486px;
+  margin-left: 1rem;
+  background-size: cover;
+}
+#slide3 {
+  background-image: url(img/bakso.jpg);
+  width: 18rem;
+  height: 486px;
+  margin-left: 1rem;
+  background-size: cover;
+}
+
+.concept {
+  align-self: self-start;
+  padding-left: 5rem;
+
+  color: #ded2d1;
+}
+
+.concept p {
+  font-family: "Dela Gothic One", sans-serif;
+  text-align: start;
+  font-size: 2.5rem;
+}
+
+.concept a {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.concept .btn {
+  display: inline-block;
+  border: 2px solid #ded2d1;
+  color: #ded2d1;
+  border-radius: 0.1rem;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.concept .btn:hover {
+  background-color: #354146;
+  border: #354146;
+}

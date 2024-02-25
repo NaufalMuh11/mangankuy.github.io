@@ -1,0 +1,265 @@
+:root {
+  --primary: #e35007;
+  --secondary: #F2F0EB;
+  --night: #0E0F10ff;
+--night-2: #151513ff;
+--bistre: #2F1C15ff;
+--lion: #C59E6Eff;
+--chamoisee: #A97F59ff;
+--black-bean: #2F160Fff;
+--caf-noir: #4E3626ff;
+--engineering-orange: #b9371b;
+--blood-red: #5C160Fff;
+--golden-brown: #A26C30ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--secondary);
+}
+
+/* Navbar Perkenalan */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 7%;
+  background-color: rgb(245, 245, 245);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+
+img {
+  width: auto;
+  height: 30px;
+}
+
+.navbar #about{
+  color:#949494;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: rgb(255, 200, 82);
+  transition-duration: 350ms;
+}
+
+.container {
+  margin-top: 70px;
+  background-color: rgb(227, 231, 197);
+  width: 100%;
+  background-image: url(img/food-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 20rem;
+  background-position-y: -70rem;
+}
+
+.content-kiri {
+  background-color: #a97f59ff;
+  width: 38rem;
+  height: auto;
+  padding: 5.5rem;
+  /* background-image: url(img/food-1.jpg); */
+}
+
+.content-kiri h1 {
+  color: #fffffff3;
+  font-size: 40px;
+  font-family: "Dela Gothic One", sans-serif;
+}
+
+.content-kiri p {
+  color: #ffdcc3;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.founded {
+  text-align: justify;
+  margin-top: 1.5rem;
+}
+.content-kiri a {
+  color: var(--secondary);
+  font-weight: 300;
+}
+
+
+/* OUR CONCEPT SECTION */
+.container-2 {
+  background-color: #21292C;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.cont-wrapper {
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.foto-comp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+}
+
+#slide1{
+  background-image: url(img/nasi.webp);
+  width: 18rem;
+  height: 486px;
+  margin-left: 5rem;
+  background-size: cover;
+}
+
+#slide2{
+  background-image: url(img/chef.jpg);
+  width: 18rem;
+  height: 486px;
+  margin-left: 1rem;
+  background-size: cover;
+}
+#slide3{
+  background-image: url(img/bakso.jpg);
+  width: 18rem;
+  height: 486px;
+  margin-left: 1rem;
+  background-size: cover;
+}
+
+.concept {
+  padding: 5rem;
+  color: #DED2D1
+}
+
+.concept p{
+  font-weight: 600;
+  text-align: center;
+  font-size: x-large;
+  padding: 1rem;
+}
+
+/* OUR TEAM */
+
+.our-lead{
+  position: relative;
+  width: 100%;
+  height: 54rem;
+  background-color: #fff3d6;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 3rem;
+}
+
+.team h2{
+  display: flex;
+  justify-content: center;
+}
+
+.leader-content1 {
+  width: 60%;
+  max-width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.leader-content1 img {
+  width: 80%;
+  max-width: 90%;
+  min-width: 60%;
+  height: auto;
+}
+
+.icons {
+  position: relative;
+  margin-top: 30px;
+}
+
+.icons i {
+  position: absolute; 
+  color: #F2F0EB;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  background-color: var(--engineering-orange);; 
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .38s ease;
+}
+
+.icons i:hover {
+  background-color: #ff6600; /* Warna latar belakang lingkaran saat dihover */
+}
+
+.team h2{
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: xxx-large;
+  color: var(--engineering-orange);
+}
+
+.circle h5{
+  color: var(--blood-red);
+  font-weight: 600 ;
+}
+
+.leader-content2 {
+  width: 80%;
+  max-width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+.leader-content2 .circle{
+  margin-right: -2rem;
+
+}
+
+.leader-content2 img {
+  width: 80%;
+ height: auto;
+ max-width: 90%;
+ min-width: 60%;
+}
+
+.leader-content2 p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--engineering-orange);
+  font-weight: 500;
+}
+
+

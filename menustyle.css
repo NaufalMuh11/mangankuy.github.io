@@ -1,0 +1,174 @@
+:root {
+  --primary: #e35007;
+  --secondary: #f2f0eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--secondary);
+  /* height: 10000px; */
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 7%;
+  background-color: rgb(245, 245, 245);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+
+img {
+  width: auto;
+  height: 30px;
+}
+.navbar #menu{
+  color:#949494;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: rgb(255, 200, 82);
+  transition-duration: 350ms;
+}
+
+/* KONTEN 1 */
+.konten-1 {
+  margin-top: 70px;
+  background-color: rgb(227, 231, 197);
+  height: 25rem;
+}
+
+.foto-foto {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#foto1{
+  background-image: url(img/slider-2.jpg);
+  background-color: rgba(197, 158, 110, 0.632);
+background-blend-mode: multiply;
+  width: 	540px; 
+  height: 25rem; 
+  background-position: -11rem;
+  background-repeat: no-repeat;
+}
+
+#foto2{
+  background-image: url(img/sorabi.jpg);
+  background-color: rgba(197, 158, 110, 0.812);
+background-blend-mode: multiply;
+  width: 	540px; 
+  height: 25rem; 
+  background-size: cover;
+  background-position-y: -9rem;
+  background-repeat: no-repeat;
+}
+
+#foto3{
+  background-image: url(img/bakso.jpg);
+  background-color: rgba(197, 158, 110, 0.659);
+background-blend-mode: multiply;
+  width: 	540px; 
+  height: 25rem; 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* KONTEN 2 */
+.konten-2{
+  background-color:#b9371b;
+  width: 100%;
+  height: 25rem;
+}
+
+.isian-konten{
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+  padding: 6rem;
+}
+
+.isian-konten a{
+  color: blanchedalmond;
+  font-size: 3.5rem;
+  font-family: "Dela Gothic One", sans-serif;
+}
+
+.isian-konten b{
+  text-align: justify center;
+  font-size: medium;
+  padding-left: 11rem;
+  padding-right: 11rem;
+  color: bisque;
+  font-weight: 400;
+}
+
+/* KONTEN MENU */
+
+.menu{
+  width: 100%;
+  height: 40rem;
+  background-image: url(img/bekgron.jpeg);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.menu-card{
+  width: 100%;
+  height: 30rem;
+  display: flex;
+}
+.card {
+      width: 300px;
+      background-color: #21292C;
+      margin: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .menu-name {
+      font-size: 1.5em;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #ffdcc3;
+    }
+
+    .menu-description {
+      font-size: medium;
+      color: #DED2D1;
+    }

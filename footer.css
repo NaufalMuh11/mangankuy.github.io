@@ -1,0 +1,74 @@
+:root {
+  --primary: #e35007;
+  --secondary: #f2f0eb;
+  --night: #0e0f10ff;
+  --night-2: #151513ff;
+  --bistre: #2f1c15ff;
+  --lion: #c59e6eff;
+  --chamoisee: #a97f59ff;
+  --black-bean: #2f160fff;
+  --caf-noir: #4e3626ff;
+  --engineering-orange: #b9371b;
+  --blood-red: #5c160fff;
+  --golden-brown: #a26c30ff;
+}
+.footer {
+  background-color: #e35007;
+  padding: 2rem 0;
+  color: var(--secondary);
+  font-weight: 400;
+  box-shadow: 0px -5px 17px 2px rgba(0, 0, 0, 0.77);
+  -webkit-box-shadow: 0px -5px 17px 2px rgba(0, 0, 0, 0.77);
+  -moz-box-shadow: 0px -5px 17px 2px rgba(0, 0, 0, 0.77);
+}
+
+.isi-footer {
+  margin-left: 200px;
+  display: flex;
+}
+
+.isi-footer img {
+  width: 8rem;
+  height: 8rem;
+  margin-top: 1rem;
+}
+
+.isi-footer b {
+  color: rgb(37, 37, 37);
+}
+
+.lokasi {
+  padding-left: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.social-logo {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 0;
+}
+
+.social-logo a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #21292c;
+  background-color: #fff3d6;
+  border-radius: 35px;
+  padding: 5px;
+  width: 35px;
+}
+
+.social-logo i {
+  color: #21292c;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3px;
+}
+
+.social-logo a:hover {
+  background-color: #ffc338;
+}
